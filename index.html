@@ -1,100 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hamid Rahich - Contact</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f3f3f3;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
     }
+
     .header {
-      background-color: #3c4b52;
-      padding: 2em 1em 4em;
-      text-align: center;
+      background: linear-gradient(to right, #37474f, #455a64);
       color: white;
-      position: relative;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid white;
-      object-fit: cover;
-      position: absolute;
-      bottom: -60px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: white;
-    }
-    .card {
+
+    .container {
+      max-width: 500px;
+      margin: 2rem auto;
       background: white;
-      max-width: 400px;
-      margin: 5em auto 2em;
-      padding: 2em;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
       text-align: center;
     }
-    .name {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 3em;
-      color: #333;
+
+    h2 {
+      margin: 0.5rem 0 1rem 0;
     }
-    .info {
-      margin: 1em 0;
-      font-size: 1.1em;
-    }
-    .info a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-    .actions {
-      display: flex;
-      justify-content: center;
-      margin: 2em 0 1em;
-      gap: 1em;
-    }
-    .action-btn {
-      flex: 1;
-      padding: 0.75em;
-      background: #e0e0e0;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      color: #333;
-      text-decoration: none;
-    }
-    .download {
+
+    a {
       display: inline-block;
-      padding: 0.8em 2em;
-      background-color: #C2185B;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
+      margin: 0.5rem 0;
       text-decoration: none;
-      margin-top: 1.5em;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      color: #1976d2;
+      font-weight: 500;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #c2185b;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      margin-top: 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #ad1457;
+    }
+
+    .icon {
+      margin-right: 0.5rem;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
     <h1>Hamid Rahich</h1>
-    <img class="profile-pic" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAQAElEQVR4AYz9B3xk2XUeiH/vvlQ5A1XIGehudM5hpieSE5iDRFKUaCtYsiSvLcm2vLuyvF6vkwIt21pbgZQoZg455JDDyanTdE7obgCNnDNQOaf3/t8t2vuz5P2vjZk3VfXiveee853vfKeAES/95f9p//4//hl75vx37PHXvmJ/5Xd/xf6tTz1m/8n//iv2m1/5d/ZvfvY5+x99/iP2v/rVz9hXv/uf7QevfsX+7h/+Q/vr//rX7P/9C0/af/bPftE+/61/Z09f+r595ft/an/5n/yc/e1/+ev2zR/8iX31pT+33/rGf7S//K//N/v3f/t/sf/Tv/oX9pW337EvvH3O/s7Xv2PfvHLd/ss/+3N75PpV+9Xvfsf+3b//v9h/8Lu/a//U8x+2P/7cR+y/+tLX7BdfeN3+4ffesL//nR/b3/zGD+x/9Qd/Yr8/tmy/enPafuXGpP3+wxX7B29f5rGv2lcvvmn/4IWv2T/6/gv27/xv/9D+1td/z85svWKnl79i17e+aU9d+aL9g6//A/vlb/yWvfbw6/bMnT+1M+s/sO38W3Z543t2dvFrdnrxr+zlsf9or078Z/uNF37NHr/6b+3lB//Znrz+R/Y73/9t++ab/9oev/Af7Ve/9Jv2xW/8M/viV37HvvrNf25/8//6gj33zp/ar/3fv2m/8G//jj1/7kv2K3/8m/Z7f/m79p/9zufsr/9fv2Bf/tb/Yb/w73/dfvmrf2D/xz/4PfuP/sOf2t/5/o/s+ZVV+1//4Rftn/vlv2//9r/5C/vnf+sP7V/7Z39qf/yX/4X9v/+HH9q//Ltftv/tV87Zv/5//pX9y7/zZ/Y/++Mf2f/+W5fsf/T737R/69981f6n//F79ud/89/a//bLL9v/+k+/Z3/xL35g//3f/aL9t/+Xf2r/4R//hX3n/rh98+Z1e2Vxwn7xO1+yR+9f" alt="Hamid Rahich" />
   </div>
 
-  <div class="card">
-    <div class="actions">
-      <a class="action-btn" href="tel:+212661150472">📞 Call</a>
-      <a class="action-btn" href="mailto:hamid.rahich@gmail.com">✉️ Email</a>
-    </div>
-    <div class="info">📱 +212661150472</div>
-    <div class="info">📧 <a href="mailto:hamid.rahich@gmail.com">hamid.rahich@gmail.com</a></div>
-    <a class="download" href="vcard_hamid_rahich.vcf" download>⬇️ Download vCard</a>
+  <div class="container">
+    <h2>Contact Info</h2>
+
+    <a href="tel:+212661150472"><span class="icon">📞</span>+212661150472</a><br/>
+    <a href="mailto:hamid.rahich@gmail.com"><span class="icon">✉️</span>hamid.rahich@gmail.com</a><br/>
+
+    <a class="download-btn" href="vcard_hamid_rahich.vcf" download>
+      <span class="icon">👤</span>Ajouter Contact
+    </a>
   </div>
+
 </body>
 </html>
+
